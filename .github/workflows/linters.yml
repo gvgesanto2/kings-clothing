@@ -16,7 +16,7 @@ jobs:
           node-version: "12.x"
       - name: Setup ESLint
         run: |
-          npm install --save-dev eslint eslint-plugin-react@^7.21.5 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint-plugin-import@^2.22.1 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-react-hooks@^4 @typescript-eslint/parser@latest eslint-import-resolver-typescript eslint-config-prettier eslint-plugin-prettier typescript prettier @types/node
+          npm install --save-dev eslint eslint-plugin-react@^7.21.5 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint-plugin-import@^2.22.1 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-react-hooks@^4 @typescript-eslint/parser@latest eslint-import-resolver-typescript eslint-config-prettier eslint-plugin-prettier typescript prettier @types/node @types/react @types/react-dom @types/jest @typescript-eslint/eslint-plugin @typescript-eslint/parser
           [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/gvgesanto2/linters-config/main/react-typescript/.eslintrc.json
           [ -f .eslintignore ] || wget https://raw.githubusercontent.com/gvgesanto2/linters-config/main/react-typescript/.eslintignore
           [ -f tsconfig.json ] || wget https://raw.githubusercontent.com/gvgesanto2/linters-config/main/react-typescript/tsconfig.json
