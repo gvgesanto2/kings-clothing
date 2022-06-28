@@ -16,10 +16,11 @@ jobs:
           node-version: "12.x"
       - name: Setup ESLint
         run: |
-          npm install --save-dev eslint eslint-plugin-react@^7.21.5 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint-plugin-import@^2.22.1 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-react-hooks@^4 @typescript-eslint/parser@latest eslint-import-resolver-typescript eslint-config-prettier eslint-plugin-prettier typescript
+          npm install --save-dev eslint eslint-plugin-react@^7.21.5 @typescript-eslint/eslint-plugin@latest eslint-config-airbnb@latest eslint-plugin-import@^2.22.1 eslint-plugin-jsx-a11y@^6.4.1 eslint-plugin-react-hooks@^4 @typescript-eslint/parser@latest eslint-import-resolver-typescript eslint-config-prettier eslint-plugin-prettier typescript prettier
           [ -f .eslintrc.json ] || wget https://raw.githubusercontent.com/gvgesanto2/linters-config/main/react-typescript/.eslintrc.json
           [ -f .eslintignore ] || wget https://raw.githubusercontent.com/gvgesanto2/linters-config/main/react-typescript/.eslintignore
           [ -f tsconfig.json ] || wget https://raw.githubusercontent.com/gvgesanto2/linters-config/main/react-typescript/tsconfig.json
+          [ -f prettier.config.js ] || wget https://raw.githubusercontent.com/gvgesanto2/linters-config/main/react-typescript/prettier.config.js
       - name: ESLint Report
         run: npx eslint .
   stylelint:
