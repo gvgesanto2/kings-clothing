@@ -28,6 +28,7 @@
     "eslint-plugin-react": "^7.21.5",
     "eslint-plugin-react-hooks": "^4",
     "prettier": "^2.7.1",
+    "sass": "^1.53.0",
     "stylelint": "13.x",
     "stylelint-config-prettier-scss": "^0.0.1",
     "stylelint-config-standard": "21.x",
